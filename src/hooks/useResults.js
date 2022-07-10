@@ -24,7 +24,7 @@ export default () => {
     //Call searchApi when component is first rendered: BAD CODE!
     //searchApi('pasta');
     useEffect(()=>{
-        searchApi('pasta');
+        searchApi('french');
     }, []);
 
     return [searchApi, results, errorMessage];
