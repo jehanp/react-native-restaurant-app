@@ -17,12 +17,13 @@ export default () => {
             });
             setResults(response.data.businesses);
         }catch(e){
-            setErrorMessage('Something went wrong')
+            setErrorMessage('Something went wrong');
         }
     }
 
     //Call searchApi when component is first rendered: BAD CODE!
     //searchApi('pasta');
+
     useEffect(()=>{
         searchApi('french');
     }, []);
